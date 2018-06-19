@@ -1,4 +1,4 @@
-package plugin.listener;
+package plugin.test.listener;
 
 import com.atlassian.event.api.EventListener;
 import com.atlassian.event.api.EventPublisher;
@@ -56,7 +56,6 @@ public class IssueEventListener implements InitializingBean, DisposableBean {
         } else if(eventTypeId.equals(EventType.ISSUE_COMMENT_DELETED_ID)) {
             System.out.println("comment deleted" + issue.getDescription());
         }
-
     }
 
 }
